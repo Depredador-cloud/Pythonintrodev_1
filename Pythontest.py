@@ -25,6 +25,13 @@ print(isinstance(4.5, float))   #Should return true
 print(isinstance(5, int))       #Should return true
 print(isinstance(72, str))      #Should return false
 
+Num = 53
+print(num)
+53
+print(float(num))
+53.0
+
+  
 #Concatenation
 
 who = "Christian"
