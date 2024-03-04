@@ -27,8 +27,8 @@ print(isinstance(72, str))      #Should return false
 
 #Concatenation
 
-who = "David"
+who = "Christian"
 how = "likes"
 what = "football"
 
-print(who + how + what)         #Should print, "David likes football"
+print(who + how + what)         #Should print, "Christian likes football"
