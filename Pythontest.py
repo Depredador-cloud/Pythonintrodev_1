@@ -40,8 +40,6 @@ texto = "Hola mundo"
 # Booleano
 verdadero = True
 falso = False
-Usa el código con precaución.
-
 
 #Type command
 
