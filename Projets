@@ -1,45 +1,67 @@
-Project	#1
-Create	a	simple	calculator	program.	
-• Need	to	have	a	way	to	input	data	into	the	program	from	user	input.
-- 2	numbers	and	an	operator
-• Might	be	easier	to	create	functions	we	can	call?
-• Think	about	using	the	IF,	ELIF	statements	we	discussed
-Project	#2
-Calculate	the	area	of	a	triangle
-• Will	need	input	from	the	user,	need	the	height	and	base	values
-• Might	want	to	use	"float"	to	be	more	precise	in	the	calculations
-• Area	=	(1/2	times	base	times	height)		(1/2	*	B	*	h)
-Project	#3
-Create	a	multiplicative	for	a	specific	number.	
-• (Create	a	multiplication	table	for	one	number	at	a	time)
-- Go	up	to	12	(1	x	1;	1	x	2;	1	x	3;	1	x4;	etc...)
-• Will	want	to	use	a	loop	for	this	one
-• Will	need	user	input	to	populate	the	variables
-Project	#4
-Create	a	program	to	find	the	largest	number	from	the	given
-• Like	before	-	need	user	input
-• Can	use	some	IF	statements
-• Can	use	some	comparison	operators
-Project	#5
-Create	a	program	that	takes	a	word	list	and	puts	it	in	alphabetically	order
-• Like	before	-	need	user	input
-• Don't	forget	about	the	sort()	function
-• You	can	print	them	in	a	list	or	each	word	on	a	line
-Project	#6
-Create	a	dice	rolling	game
-• Won’t	need	user	input	this	time	if	you	don’t	want	(not	necessary)
-• Think	about	a	while	loop	maybe?
-• Seems	like	a	good	place	for	an	IF	and	ELSE	statement
-Project	#7
-Pick	a	random	word	out	of	a	word	list
-• Won’t	need	user	input,	but	will	need	to	either	create	a	word	list	from	code,	or	scratch	(simple	
-text	file)
-• Remember	how	to	open	files	for	reading
-• Will	need	some	randomness in	there	somehow	–	(import	random)
-Project	#8
-Create	a	Rock,	Paper,	Scissors	game
-• Will	need	user	input
-• 2	players
-• Will	need	to	use	some	IF,	ELIF	statements	for	decision	making
-• Print	to	the	screen
-• Think	about	how	you	want	to	compare	the	player	selections
+# Python Beginner Projects
+
+This repository contains a series of beginner-friendly Python projects aimed at practicing basic programming concepts. Each project focuses on utilizing fundamental Python syntax and structures, such as conditionals, loops, and functions. These projects are perfect for beginners looking to apply their knowledge in practical scenarios.
+
+## Project 1: Simple Calculator
+
+- **Objective**: Create a simple calculator that can perform basic arithmetic operations.
+- **Features**:
+  - Accept user input for two numbers and an operator.
+  - Support addition, subtraction, multiplication, and division.
+- **Concepts to Practice**: Functions, `if`/`elif` statements, user input.
+
+## Project 2: Triangle Area Calculator
+
+- **Objective**: Calculate the area of a triangle given the height and base.
+- **Features**:
+  - Prompt the user to input the base and height values.
+  - Use the formula `area = 1/2 * base * height`.
+- **Concepts to Practice**: User input, floating-point arithmetic.
+
+## Project 3: Multiplication Table
+
+- **Objective**: Generate a multiplication table for a number specified by the user.
+- **Features**:
+  - Accept a number from the user.
+  - Display the multiplication table for that number up to 12.
+- **Concepts to Practice**: Loops, user input.
+
+## Project 4: Find the Largest Number
+
+- **Objective**: Create a program to find the largest number from a user-given list.
+- **Features**:
+  - Accept multiple numbers from the user.
+  - Identify and display the largest number.
+- **Concepts to Practice**: `if` statements, comparison operators, user input.
+
+## Project 5: Alphabetize Word List
+
+- **Objective**: Alphabetize a list of words provided by the user.
+- **Features**:
+  - Accept a list of words from the user.
+  - Sort and display the words in alphabetical order.
+- **Concepts to Practice**: List sorting, user input.
+
+## Project 6: Dice Rolling Simulator
+
+- **Objective**: Simulate rolling a dice.
+- **Features**:
+  - Option to roll the dice multiple times.
+  - Display each result.
+- **Concepts to Practice**: Loops, `if`/`else` statements, randomness.
+
+## Project 7: Random Word Selector
+
+- **Objective**: Select a random word from a predefined list.
+- **Features**:
+  - Store a list of words in a text file or within the code.
+  - Display a randomly selected word.
+- **Concepts to Practice**: File I/O, randomness.
+
+## Project 8: Rock, Paper, Scissors Game
+
+- **Objective**: Create a Rock, Paper, Scissors game for two players.
+- **Features**:
+  - Accept choices (rock, paper, scissors) from two players.
+  - Determine and display the winner.
+- **Concepts to Practice**: User input, `if`/`elif` statements, game logic.
