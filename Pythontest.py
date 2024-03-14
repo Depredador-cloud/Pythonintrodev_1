@@ -69,3 +69,80 @@ how = "likes"
 what = "football"
 
 print(who + how + what)         #Should print, "Christian likes football"
+
+#Module 3 - Multiple Assignment Operators
+
+x, y, z = 10, 20, 30
+print(x)
+print(y)
+print(z)
+
+#using a For Loop with Multiple Assignment Operators
+
+ages = {"Dave": '22', "Bob": '33', "Mark": '38'}
+for key, value in ages.items():
+    print(f" {key} is {value} years old")
+
+#Module 4 - Converting Types
+
+#Convert to integer - int()
+
+print(int(63.62))
+
+#Convert to Float - float()
+
+print(float(12))
+
+#Convert to string - str()
+
+print(str(99))
+
+#Module 5 - Creating Lists
+
+employees = ['Sara', 'Tammy', 'Debbie', 'John', 'Carrie']
+print(employees)
+
+#Module 6 - Modifying Lists
+
+employees = ['Sara', 'Tammy', 'Debbie', 'John', 'Carrie']
+print(employees)
+print("--------------------------------------------------------")
+employees[0] = 'Mark'  #This should replace whatever is at Index 0 with Mark
+print(employees)
+
+
+employees = ['Sara', 'Tammy', 'Debbie', 'John', 'Carrie']
+employees.insert(1, 'Dave')  #Insert 'Dave' at Index spot 1, and move others down
+print(employees)
+
+
+#Loop through the list, printing each item per line
+employees = ['Sara', 'Tammy', 'Debbie', 'John', 'Carrie']
+for x in employees:
+    print(x)
+
+
+#Check for an item in the list
+employees = ['Sara', 'Tammy', 'Debbie', 'John', 'Carrie']
+if "Tammy" in employees:
+    print("Yup, she is there")
+
+#Module 7 - Sorting and Reversing Lists
+
+#put in alphabetical order
+colors = ['blue', 'red', 'yellow', 'green']
+print(colors.sort())
+
+#Reverse alphabetical order
+colors = ['blue', 'red', 'yellow', 'green']
+print(colors.sort(reverse=True))
+
+#Just reverse order
+colors = ['blue', 'red', 'yellow', 'green']
+print(colors.reverse())
+
+#Sorting without changing the list for good
+colors = ['blue', 'red', 'yellow', 'green']
+print(sorted(colors))
+
+
