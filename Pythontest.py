@@ -346,3 +346,197 @@ for y in range(25):
 
 for b in range(0, 100, 5):
     print(b)
+
+#Module 13 - Working with While Loops
+
+x = 1
+while x < 10:
+    print("You are the best!!")
+    x += 1
+
+#Module 14 - Nesting For Loops
+
+# Should print the numbers once, with all the letters listed below
+
+nums = [1, 2, 3]
+letters = ['a', 'b', 'c', 'd']
+
+for x in nums:
+    print(x)
+    for y in letters:
+        print(y)
+#Module 14 - Nesting For Loops
+
+# Should print the numbers once, with all the letters listed below
+
+nums = [1, 2, 3]
+letters = ['a', 'b', 'c', 'd']
+
+for x in nums:
+    print(x)
+    for y in letters:
+        print(y)
+
+#Module 15 - Reading Files
+
+#Don't forget about the path where the file will be saved if creating a new one
+#Don't forget about the path where the file will be searched for when opening a file
+
+# r - Opens a file in Read Only mode
+# w - Opens a file that allows Write-level access
+# a - Opens file in Append mode
+
+x = open("filename.txt", 'r')
+print(x.readline())
+x.close()
+
+#Creating a new file
+
+b = open("FileNameHere.txt", 'x')
+
+#Module 16 - Copying Files
+
+#   shutil - don't forget to import the module
+import shutil
+
+shutil.copy(src, dst)
+
+#   Copies and metadata
+
+shutil.copystat(src, dst)
+
+import shutil
+src = "SourceFile.txt"
+dst = "DestinationFile.txt"
+shutil.copy(src, dst)
+
+#Module 17 - Merging Emails
+
+#Will need the Names.txt file with a few names entered
+#Will need the Message.txt flie with a message inside the file
+
+with open("Names.txt", 'r') as name_file:
+    with open("Message.txt", 'r') as message_file:
+
+              body = message_file.read()
+              for name in name_file:
+                  mail = "Hey " + name + body
+                  with open(name.strip() +".txt", 'w') as message_file:
+                      message_file.write(mail)
+
+#Should create however many files are in the Names.txt file and put the message from Message.txt in each new file created.
+
+#Module 18 - Reading Console inputs and formatting outputs
+
+txt = input("Please enter a number: ")
+num = int(txt)
+print("You entered the number", num)
+
+#Module 19 - Reading Command Line Arguments
+
+#Reading information about the file you are working on
+
+import sys
+
+print("The name of our file is:", (sys.argv[0]))
+
+#Module 20 - Defining Functions
+
+#Creating some functions
+
+def my_first():
+    print("This is my first function")
+
+my_first()
+
+#Module 21 - Default Arguments
+
+#Same on that is on the slide
+
+def student(firstname, lastname="Bigger", major="IT"):
+    print(firstname, lastname, "majors in", major)
+
+#1 argument
+
+student("Tony")
+
+#2 arguements
+
+student("Stan", "Lee")
+
+#3 arguments
+
+student("Tony", "Stark", "physics")
+
+#Module 22 - Keyword and Positional Arguments
+
+#Like on the slides
+
+def greet(name, msg="How are you today?"):
+    print("Hey", name + ", " + msg)
+
+# 2 keyword
+
+greet(name="Dave", msg="What's going on today?")
+
+#1 positional, 1 keyword
+
+greet("Dave", msg = "How you doin?")
+
+#Module 23 - Handling Exceptions
+
+import sys
+
+try:
+    num = int(input("Please enter your favorite number: "))
+
+except ValueError:
+    print("Please only use numbers, no text")
+    sys.exit()
+
+print("You enetered the number", num)
+
+#Module 24 - Using Math and Random Modules
+
+#Math has tons of operations and we can't list them all out here like mentioned during the lecture
+
+import math
+
+num = int(input("Please enter your favorite number, and  we will tell you the square root: "))
+print(math.sqrt(num))
+
+
+#Random
+
+import random
+
+print("Print a random integer between 0 and 500:", random.randint(0, 500))
+
+#Module 25 - Displaying Datetime and Working Directory
+
+#import all your modules!
+
+from datetime import date
+from datetime import time
+from datetime import datetime
+
+today = date.today()
+date_time = datetime.now()
+
+print("Today's date is: ", today)
+print("Can you be more specific please? ", date_time)
+print("Break it down....")
+print("The hour ", date_time.hour)
+print("The minute ", date_time.minute)
+print("The seconds ", date_time.second)
+
+#Working directory
+print("\n")
+import os
+
+dirpath = os.getcwd()
+print("Your current working directory is: " + dirpath)
+
+foldername = os.path.basename(dirpath)
+print("The specific folder is: " + foldername)
+
