@@ -129,6 +129,32 @@ for word in words:
   - Display a randomly selected word.
 - **Concepts to Practice**: File I/O, randomness.
 
+#Project #7
+#Using a word list, pick a random word
+
+
+import random
+
+# read all the list of words
+words = []
+with open('wordlist.txt', 'r') as file:
+    line = file.readline().strip()
+    words.append(line)
+    while line:
+        line = file.readline().strip()
+        words.append(line)
+
+random_index = random.randint(0, len(words))
+  
+print("Your random word is:", words[random_index])
+
+
+###  OR  ###
+
+import random
+
+print(random.choice(open("wordlist.txt").read().split()))
+
 ## Project 8: Rock, Paper, Scissors Game
 
 - **Objective**: Create a Rock, Paper, Scissors game for two players.
