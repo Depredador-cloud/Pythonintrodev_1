@@ -145,4 +145,204 @@ print(colors.reverse())
 colors = ['blue', 'red', 'yellow', 'green']
 print(sorted(colors))
 
+#Module 8 - Slicing Lists
 
+#slicing starting at index 1, up to index 8, counting by 2
+nums = [1, 2, 3, 4, 5, 6, 7, 8]
+print(nums[1:8:2])
+
+#slicing starting at index 0, up to index, counting by 1 (default count)
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(nums[0:9])
+
+#Module 9 - Working with Operators
+#Just a few to get your mind thinking
+
+#################   Arithmetic Operators
+
+x = 5 + 2
+print(x)
+
+y = 5 - 2
+print(y)
+
+z = 5 * 2
+print(z)
+
+a = 8 / 2
+print(a)
+
+b = 2**2
+print(b)
+
+#################   Assignment Operators
+#ADD AND...
+a = 2
+a += 3
+print(a)
+
+#SUBTRACT AND...
+z = 20
+z -= 12
+print(z)
+
+#MULTIPLY AND...
+x = 8
+x *= 2
+print(x)
+
+#DIVIDE AND...
+b = 20
+b /= 2
+print(b)
+
+#EXPONENT AND...
+t = 8
+t **= 2
+print(t)
+
+#################  Comparison Operators
+x == 10
+y == 12
+print(x == y)  #True or False?
+
+t = 22
+s = 8
+print(t <= s)  #True or False?
+
+#################   Logical Operators
+a = 4
+print(a > 2 and a < 7)    #True or False
+
+b = 3
+print(b < 2 or b > 1)     #True or False
+
+#################   Identity Operators
+w = 2
+y = 6
+x = w
+print(w is y)
+print(w is x)
+
+#################   Membership Operators
+nums = [1,2,3,4]
+print(3 in nums)
+
+nums = [1,2,3,4]
+print(5 not in nums)
+
+#Module 9 - Working with Operators
+#Just a few to get your mind thinking
+
+#################   Arithmetic Operators
+
+x = 5 + 2
+print(x)
+
+y = 5 - 2
+print(y)
+
+z = 5 * 2
+print(z)
+
+a = 8 / 2
+print(a)
+
+b = 2**2
+print(b)
+
+#################   Assignment Operators
+#ADD AND...
+a = 2
+a += 3
+print(a)
+
+#SUBTRACT AND...
+z = 20
+z -= 12
+print(z)
+
+#MULTIPLY AND...
+x = 8
+x *= 2
+print(x)
+
+#DIVIDE AND...
+b = 20
+b /= 2
+print(b)
+
+#EXPONENT AND...
+t = 8
+t **= 2
+print(t)
+
+#################  Comparison Operators
+x == 10
+y == 12
+print(x == y)  #True or False?
+
+t = 22
+s = 8
+print(t <= s)  #True or False?
+
+#################   Logical Operators
+a = 4
+print(a > 2 and a < 7)    #True or False
+
+b = 3
+print(b < 2 or b > 1)     #True or False
+
+#################   Identity Operators
+w = 2
+y = 6
+x = w
+print(w is y)
+print(w is x)
+
+#################   Membership Operators
+nums = [1,2,3,4]
+print(3 in nums)
+
+nums = [1,2,3,4]
+print(5 not in nums)
+
+#Module 11 - IF Statements
+
+x = 1
+y = 3
+if x > y:
+    print("X is greater than Y")
+elif x == y:
+    print("X and Y are equal")
+else:
+    print("Y is greater than X")
+
+
+#Without IF statements
+
+employees = ['Mark', 'Steve', 'Dave', 'Lisa', 'Jordyn']
+
+if 'Steve' in employees:
+    print("Steve is an employee")
+if 'Lisa' in employees:
+    print("Lisa is an employee")
+if 'John' in employees:
+    print("John is an employee")
+
+print("All done with employee selection")
+
+#Module 12 - Working with For Loops
+
+employees = ['Mark', 'Lisa', 'John', 'Dave']
+for x in employees:
+    print(x)
+
+
+#Using a for loop to print a range
+
+for y in range(25):
+    print(y)
+
+for b in range(0, 100, 5):
+    print(b)
