@@ -42,6 +42,17 @@ This repository contains a series of beginner-friendly Python projects aimed at 
   - Sort and display the words in alphabetical order.
 - **Concepts to Practice**: List sorting, user input.
 
+#Project #5
+#Alphabetical Order
+
+words = input("Enter your words here: ")
+
+words = words.split()
+words.sort()
+
+for word in words:
+   print(word)
+
 ## Project 6: Dice Rolling Simulator
 
 - **Objective**: Simulate rolling a dice.
